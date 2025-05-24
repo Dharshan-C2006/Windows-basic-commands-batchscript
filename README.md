@@ -25,21 +25,35 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
+```
+mkdir my-folder
+```
+
+
 
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
+```
+rmdir my-folder
+```
 
 
 Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
+```
+touch Rose.txt
+```
+
 
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
+```
 
+```
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT

@@ -29,6 +29,7 @@ Create a directory named "my-folder"
 mkdir my-folder
 ```
 
+![Screenshot 2025-05-24 125419](https://github.com/user-attachments/assets/f4ad4aca-6745-41e4-a065-ff71d10461f8)
 
 
 Remove the directory "my-folder"
@@ -38,6 +39,7 @@ Remove the directory "my-folder"
 rmdir my-folder
 ```
 
+![Screenshot 2025-05-24 125428](https://github.com/user-attachments/assets/6cb3852c-940d-4746-bc8e-03c535ce9b3e)
 
 Create the file Rose.txt
 
@@ -46,34 +48,75 @@ Create the file Rose.txt
 touch Rose.txt
 ```
 
+![Screenshot 2025-05-24 125529](https://github.com/user-attachments/assets/410aa9a0-1b6d-4665-9219-104f8d1d6974)
 
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
 ```
+echo "Hello, world!" > hello.txt
 
 ```
+
+
+![Screenshot 2025-05-26 083310](https://github.com/user-attachments/assets/9c52ef01-60d9-423c-91ff-2653d0c1a5bb)
+
+
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
+```
+cp hello.txt hello1.txt
+
+```
+
+
+![Screenshot 2025-05-26 083425](https://github.com/user-attachments/assets/41934abe-5dde-4b0d-95dc-2632d9ecdf9f)
+
 
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
+```
+rm hello1.txt
+
+```
+![image](https://github.com/user-attachments/assets/10ca6b1b-93fd-4c13-a0e7-b370317f83c3)
+
+
 
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
+```
+ls hello1.txt
+
+```
+![image](https://github.com/user-attachments/assets/c8bb2dd5-a93a-4920-a9ea-19eb22602774)
+
+
 
 List out all the associated file extensions 
 
 ## COMMAND AND OUTPUT
+```
+ls | awk -F. 'NF>1 {print $NF}' | sort | uniq
+
+```
+![image](https://github.com/user-attachments/assets/d64dfbef-81d2-4d65-94f7-0eaf634607aa)
+
 
 
 Compare the file hello.txt and rose.txt
 
 ## COMMAND AND OUTPUT
+```
+diff hello.txt rose.txt
+
+```
+![image](https://github.com/user-attachments/assets/577b5b04-e170-4ac1-a79f-a049a73fed4e)
+
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
